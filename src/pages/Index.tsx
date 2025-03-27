@@ -1,12 +1,50 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useEffect, useRef } from 'react';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import Features from '@/components/Features';
+import LaunchCountdown from '@/components/LaunchCountdown';
+import Testimonials from '@/components/Testimonials';
+import Footer from '@/components/Footer';
 
 const Index = () => {
+  const mainRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Smooth scroll handling for anchor links
+    const handleAnchorClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const anchor = target.closest('a');
+      
+      if (anchor && anchor.hash && anchor.hash.startsWith('#')) {
+        e.preventDefault();
+        const targetElement = document.querySelector(anchor.hash);
+        
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }
+    };
+    
+    // Add event listener
+    window.addEventListener('click', handleAnchorClick);
+    
+    // Clean up
+    return () => window.removeEventListener('click', handleAnchorClick);
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div ref={mainRef} className="antialiased scroll-container">
+      <Header />
+      <main>
+        <Hero />
+        <Features />
+        <LaunchCountdown />
+        <Testimonials />
+      </main>
+      <Footer />
     </div>
   );
 };
