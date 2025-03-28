@@ -29,10 +29,10 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <a href="#" className="font-serif text-2xl text-maroon font-semibold tracking-wider inline-block mb-4">
-                बनारसी
+                WeVama
               </a>
               <p className="text-sm text-gray-600 max-w-xs">
-                Every saree you buy supports a local weaver and keeps the tradition alive.
+                Saree you buy from us, supports a local weaver and keeps the tradition alive.
               </p>
             </div>
             
@@ -76,10 +76,10 @@ const Footer = () => {
               </div>
               <div>
                 <p className="text-sm text-gray-600">
-                  Email: contact@banarasi-sarees.com
+                  Email: support@wevama.in
                 </p>
                 <p className="text-sm text-gray-600">
-                  WhatsApp: +91 98765 43210
+                  WhatsApp: +91 75308 20620
                 </p>
               </div>
             </div>
@@ -87,7 +87,7 @@ const Footer = () => {
           
           <div className="border-t border-gray-100 mt-12 pt-8 text-center">
             <p className="text-sm text-gray-500">
-              &copy; {new Date().getFullYear()} Banarasi Sarees. All rights reserved.
+              &copy; {new Date().getFullYear()} WeVama Sarees. All rights reserved.
             </p>
           </div>
         </div>
