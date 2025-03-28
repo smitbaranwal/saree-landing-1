@@ -106,7 +106,7 @@ const Features = () => {
               </div>
               <div className="h-64 md:h-auto">
                 <img 
-                  src="https://images.unsplash.com/photo-1609588553740-91938be14f27?q=80&w=800&auto=format" 
+                  src="../../../istockphoto-18.jpg" 
                   alt="Saree weaving process"
                   className="w-full h-full object-cover"
                   loading="lazy"

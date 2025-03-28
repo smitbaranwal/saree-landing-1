@@ -24,7 +24,7 @@ const Header = () => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="animate-fade-in">
           <a href="#" className="font-serif text-2xl text-maroon font-semibold tracking-wider">
-            बनारसी
+            WEVAMA
           </a>
         </div>
 

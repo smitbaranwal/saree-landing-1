@@ -5,13 +5,15 @@ import { toast } from "sonner";
 const LaunchCountdown = () => {
   // Set the countdown date (10 days from now for demonstration)
   const launchDate = new Date();
-  launchDate.setDate(launchDate.getDate() + 10);
+  launchDate.setDate(launchDate.getDate() + 30);
+  launchDate.setHours(0, 0, 0, 0);
+
   
   const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
+    days: 20,
+    hours: 10,
+    minutes: 45,
+    seconds: 23
   });
   
   const [email, setEmail] = useState('');

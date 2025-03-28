@@ -10,21 +10,21 @@ const Testimonials = () => {
       name: "Priyanka Sharma",
       location: "Delhi",
       quote: "The quality and craftsmanship of the Banarasi saree I received was exceptional. You can feel the heritage in every thread.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&auto=format&crop=faces"
+      image: "../../../instagram3.jpg"
     },
     {
       id: 2,
       name: "Anjali Patel",
       location: "Mumbai",
       quote: "Knowing that my purchase directly supports the artisans makes it even more special. The saree became the highlight of my sister's wedding.",
-      image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&h=200&auto=format&crop=faces"
+      image: "../../../instagram4.jpg"
     },
     {
       id: 3,
       name: "Rekha Menon",
       location: "Bangalore",
       quote: "The intricate zari work and the rich color of my Banarasi saree exceeded my expectations. It's an heirloom piece I'll cherish forever.",
-      image: "https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=200&h=200&auto=format&crop=faces"
+      image: "../../../instagram3.jpg"
     }
   ];
   
@@ -137,7 +137,7 @@ const Testimonials = () => {
                 className="block overflow-hidden rounded-lg shadow-sm transform transition-transform hover:scale-105 hover:shadow-md"
               >
                 <img 
-                  src={`https://images.unsplash.com/photo-${1550000000000 + item * 1000}?w=300&h=300&auto=format&fit=crop&q=80`} 
+                  src={`../../../instagram${item}.jpg`} 
                   alt={`Instagram post ${item}`}
                   className="w-full h-auto aspect-square object-cover"
                   loading="lazy"

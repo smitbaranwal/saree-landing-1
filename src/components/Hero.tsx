@@ -59,7 +59,7 @@ const Hero = () => {
           <div className="bg-white/20 backdrop-blur-sm p-2 rounded-lg shadow-xl overflow-hidden transform md:rotate-1 transition-all duration-700 hover:rotate-0 animate-fade-in opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
             <div className="overflow-hidden rounded-md">
               <img 
-                src="https://images.unsplash.com/photo-1617611653673-85547d969d2d?q=80&w=1200&auto=format" 
+                src="../../../istockphoto.jpg" 
                 alt="Beautiful Banarasi Saree"
                 className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
                 loading="lazy"
